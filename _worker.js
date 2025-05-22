@@ -596,7 +596,7 @@ export default {
     }
 
     async function getNotificationContent() {
-      const response = await fetch('https://raw.githubusercontent.com/iawooo/ctt/refs/heads/main/CFTeleTrans/notification.md');
+      const response = await fetch('https://raw.githubusercontent.com/IncredibleGG/ctt/refs/heads/main/CFTeleTrans/notification.md');
       if (!response.ok) return '';
       const content = await response.text();
       return content.trim() || '';
